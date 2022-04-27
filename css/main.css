@@ -202,13 +202,15 @@ h3 span {
     .main-varios .contenedor-varios img {
       width: 350px; }
     .main-varios .contenedor-varios h4 {
-      margin: 2rem;
+      margin-left: 4rem;
+      margin-right: 4rem;
       font-size: 1.3rem;
       font-weight: 500; }
     .main-varios .contenedor-varios p {
+      font-size: 1rem;
       font-weight: 200;
-      margin-left: 2rem;
-      margin-right: 2rem; }
+      margin-left: 4rem;
+      margin-right: 4rem; }
     .main-varios .contenedor-varios .parrafo-video {
       font-size: 1.5rem;
       font-weight: 600;
@@ -236,12 +238,12 @@ h3 span {
   .nosotros-contenedor h2 {
     font-weight: 700; }
   .nosotros-contenedor img {
-    width: 600px; }
+    width: 400px; }
   .nosotros-contenedor .titulo-nosotros {
     font-weight: 700;
     color: #212529; }
   .nosotros-contenedor p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 550;
-    margin-left: 5rem;
-    margin-right: 5rem; }
+    margin-left: 3rem;
+    margin-right: 3rem; }
