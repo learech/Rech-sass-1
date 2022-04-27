@@ -1,0 +1,53 @@
+@import "utilities/mixins";
+@import "utilities/funciones";
+
+main {
+    @include flex;
+    background-image: $gradiente-secundario;
+  
+    h2 {
+        margin-top: 6rem;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .parrafo-especial {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    img {
+        width: 450px;
+    }
+    h3 {
+        margin: 0.5rem;
+        color: brown;
+    }
+    h4 {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+    .parrafo-disco {
+        font-weight: 600;
+        @include margen;   
+    }
+    .contenedor-disco {
+        img {
+            width: 300px;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1rem;
+            font-weight: 600;
+            @include margen;
+        }
+    }
+    h5 {
+        font-size: 2rem;
+        margin: 0.5rem;
+    }
+
+}

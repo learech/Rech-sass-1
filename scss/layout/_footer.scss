@@ -1,0 +1,37 @@
+.footer {
+    background-color:$color-secundario ;
+    color:white;
+    text-align: center;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    .parrafo-uno {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    h6 {
+        margin-bottom: 0.6rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    .parrafo-dos {
+        margin-bottom: 0.5rem;
+    }
+    .ir-arriba {
+        margin: 0.4rem;
+        padding: 0.4rem;
+        display: inline-block;
+        color: black;
+        background-color: $color-principal;
+        text-decoration: none;
+        border: 1px solid transparent;
+        border-radius: 1rem solid;
+        &:hover {
+            background-color: $color-terciario;
+            transform: scale(1.2);
+        }
+    }
+    .footer-parrafo-tres {
+        padding: 1.5rem;
+    }
+
+}
