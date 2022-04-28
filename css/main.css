@@ -55,6 +55,7 @@ main {
     margin: 0.5rem; }
 
 .footer {
+  margin-bottom: 0;
   background-color: #212529;
   color: white;
   text-align: center;
@@ -136,10 +137,6 @@ body {
     .carousel h5 {
       margin: 4rem;
       font-weight: 700; }
-  .main-discos {
-    display: flex;
-    flex-direction: column;
-    justify-items: center; }
   .nosotros {
     display: flex; }
     .nosotros .nosotros-contenedor {
@@ -162,6 +159,10 @@ body {
         text-align: center; }
       .nosotros .texto-nosotros p {
         text-align: start; }
+  .main-discos {
+    display: flex;
+    flex-direction: column;
+    justify-items: center; }
   .contacto {
     display: flex; }
     .contacto .formulario {
@@ -209,8 +210,8 @@ h3 span {
     .main-varios .contenedor-varios p {
       font-size: 1rem;
       font-weight: 200;
-      margin-left: 4rem;
-      margin-right: 4rem; }
+      margin-left: 3rem;
+      margin-right: 3rem; }
     .main-varios .contenedor-varios .parrafo-video {
       font-size: 1.5rem;
       font-weight: 600;

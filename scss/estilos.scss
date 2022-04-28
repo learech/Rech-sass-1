@@ -6,7 +6,6 @@
 @import "utilities/mixins";
 @import "views/contacto";
 @import "base/tipografia";
-@import "utilities/funciones";
 @import "layout/media";
 //Discos
 
@@ -54,8 +53,8 @@ h3 {
         p {
             font-size: 1rem;
             font-weight: 200;
-            margin-left: 4rem;
-            margin-right: 4rem; 
+            margin-left: 3rem;
+            margin-right: 3rem; 
         }
         .parrafo-video {
             font-size: 1.5rem;
