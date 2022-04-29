@@ -4,6 +4,7 @@
 @import "views/home";
 @import "layout/footer";
 @import "utilities/mixins";
+@import "utilities/funciones";
 @import "views/contacto";
 @import "base/tipografia";
 @import "layout/media";
@@ -73,8 +74,7 @@ h3 {
             width: 250px;
         }
         p {
-            margin-left: 2rem;
-            margin-right: 2rem;
+           @include margen;
         }
     }
 }

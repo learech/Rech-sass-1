@@ -1,5 +1,5 @@
 @import "utilities/mixins";
-
+@import "utilities/funciones";
 main {
     @include flex;
     background-image: $gradiente-secundario;
@@ -11,15 +11,16 @@ main {
         text-transform: uppercase;
     }
     p {
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: 600;
     }
     .parrafo-especial {
         font-size: 1rem;
         font-weight: 100;
+        @include margen;
     }
     img {
-        width: 450px;
+        width: 400px;
     }
     h3 {
         margin: 0.5rem;
@@ -30,8 +31,8 @@ main {
         font-size: 2rem;
     }
     .parrafo-disco {
-        font-weight: 600;
-        @include margen;   
+        @include margen;
+        @extend fuente;   
     }
     .contenedor-disco {
         img {
@@ -39,9 +40,8 @@ main {
             margin-bottom: 1rem;
         }
         p {
-            font-size: 1rem;
-            font-weight: 600;
             @include margen;
+            @extend fuente;
         }
     }
     h5 {

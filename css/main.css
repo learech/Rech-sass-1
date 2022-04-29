@@ -25,13 +25,15 @@ main {
     font-weight: 700;
     text-transform: uppercase; }
   main p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600; }
   main .parrafo-especial {
     font-size: 1rem;
-    font-weight: 100; }
+    font-weight: 100;
+    margin-left: 2rem;
+    margin-right: 2rem; }
   main img {
-    width: 450px; }
+    width: 400px; }
   main h3 {
     margin: 0.5rem;
     color: brown; }
@@ -39,15 +41,12 @@ main {
     margin-top: 2rem;
     font-size: 2rem; }
   main .parrafo-disco {
-    font-weight: 600;
     margin-left: 2rem;
     margin-right: 2rem; }
   main .contenedor-disco img {
     width: 300px;
     margin-bottom: 1rem; }
   main .contenedor-disco p {
-    font-size: 1rem;
-    font-weight: 600;
     margin-left: 2rem;
     margin-right: 2rem; }
   main h5 {
@@ -63,7 +62,8 @@ main {
   -webkit-text-size-adjust: 100%; }
   .footer .parrafo-uno {
     padding: 0.5rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 0.5rem;
+    margin-top: 1rem; }
   .footer h6 {
     margin-bottom: 0.6rem;
     font-size: 1.3rem;
@@ -158,7 +158,9 @@ body {
       .nosotros .texto-nosotros .titulo-nosotros {
         text-align: center; }
       .nosotros .texto-nosotros p {
-        text-align: start; }
+        text-align: start;
+        font-size: 1rem;
+        font-weight: 550; }
   .main-discos {
     display: flex;
     flex-direction: column;
