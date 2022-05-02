@@ -8,6 +8,7 @@
 @import "views/contacto";
 @import "base/tipografia";
 @import "layout/media";
+@import "views/literatura";
 //Discos
 
 .titulo-discos {
@@ -30,26 +31,26 @@ h3 {
     }
 }
 
-//Varios
-.main-varios {
+//Films
+.main-films {
     @include flex;
-    .titulo-varios {
+    .titulo-films {
         margin-top: 9rem;
     }
-    .contenedor-varios {
+    .contenedor-films {
         @include flex;
-        h3 {
+        h2 {
             margin-bottom: 2rem;
             font-size: 1.5rem;
         }
         img {
             width: 350px;
         }
-        h4 {
+        h3 {
             margin-left: 4rem;
             margin-right: 4rem;
             font-size: 1.3rem;
-            font-weight: 500;
+            font-weight: 700;
         }
         p {
             font-size: 1rem;
@@ -62,35 +63,28 @@ h3 {
             font-weight: 600;
             margin-top: 2rem;
         }
-    }
-    .libro-varios {
-        @include flex;
-        h5 {
-            font-size: 1.5rem;
-            margin-top: 5rem;
-        }
-        img {
-            margin: 1.5rem;
-            width: 250px;
-        }
-        p {
-           @include margen;
+        iframe {
+            margin-bottom: 2rem;
         }
     }
+    
 }
 
 //Nosotros
-
+.nosotros{
+    h2 {
+        margin-top: 6rem;
+        font-weight: 700; 
+     }
 .nosotros-contenedor {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     text-align: center;
-    h2 {
-       font-weight: 700; 
-    }
+   
     img {
         width: 400px;
+        margin-top: 1rem;
     }
     .titulo-nosotros {
         font-weight: 700;
@@ -101,7 +95,9 @@ h3 {
         font-weight: 550;
         margin-left: 3rem;
         margin-right: 3rem;
+        margin-bottom: 3rem;
     }
+}
 }
 
 

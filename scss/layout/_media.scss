@@ -1,128 +1,111 @@
 @media only screen and (min-width:600px) {
-   //discos
-   .contenedor-discos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    .disco {
-        img {
-            width: 200px;
-            height: 200px;
-        }
-        p {
-            font-size: 1rem;
-        }
-    }
-   }
-}
 
-@media only screen and (min-width:900px) {
-    main {
-        display: grid;
-        height: 70%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 0.1fr 0.6fr;
-        grid-template-areas: "contenedor-inicio contenedor-disco"
-                             "h3 h3"
-                             "carousel carousel";
-    }
-    .contenedor-inicio {
-        grid-area: contenedor-inicio;
-        margin-bottom: 0;
-        img {
-            height: 350px;
-        }
-    }
-    .contenedor-disco {
-        grid-area: contenedor-disco;
-        margin-top: 5rem;
+    //discos
+    .contenedor-discos {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        img {
-            width: 200px;
-        }
-    } 
-    
-    h3 {
-        grid-area: h3;
-    }
+        gap: 1.5rem;
 
-    .carousel {
-        grid-area: carousel;
-        margin-top: 2rem;
-        display: flex;
-        justify-content: center;
-        h5 {
-            margin: 4rem;
-            font-weight: 700;
+        .disco {
+            img {
+                width: 200px;
+                height: 200px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
         }
+        
     }
 
 
-   //Nosotros
+    @media only screen and (min-width:900px) {
+        main {
+            display: grid;
+            height: 70%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 0.1fr 0.6fr;
+            grid-template-areas: "contenedor-inicio contenedor-disco"
+                "h2 h2"
+                "carousel carousel";
+        }
 
-   .nosotros {
-       display: flex;
-       .nosotros-contenedor {
-           display: grid;
-           height: 90vh;
-           grid-template-columns: 1fr 1fr;
-           grid-template-rows: 0.5fr 1fr;
-           grid-template-areas: "h2 h2"
-                                 "img texto-nosotros";
+        .contenedor-inicio {
+            grid-area: contenedor-inicio;
+            margin-bottom: 0;
+
+            img {
+                height: 350px;
+            }
         }
-        h2 {
-            grid-area: h2;
-            text-align: center;
-        }
-        img {
-            grid-area: img;
-            margin: 1rem;
-        }
-        .texto-nosotros {
-            grid-area: texto-nosotros;
+
+        .contenedor-disco {
+            grid-area: contenedor-disco;
+            margin-top: 5rem;
             display: flex;
             flex-direction: column;
-            .titulo-nosotros {
-                text-align: center;
-            }
-            p {
-               text-align: start;
-               font-size: 1rem;
-               font-weight: 550;
+            justify-content: center;
+
+            img {
+                width: 200px;
             }
         }
-   }
 
-     //Discos
+        h2 {
+            grid-area: h2;
+        }
 
-     .main-discos {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
+        .carousel {
+            grid-area: carousel;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+
+            h4 {
+                margin: 3rem;
+                font-weight: 700;
+            }
+        }
+
+        //Nosotros
+        .nosotros {
+            display: inline-flex;
+            .nosotros-contenedor {
+                .imagen-nosotros {
+                    justify-content: center;
+                    img {
+                        width: 600px;
+                    }
+                }
+                .texto-nosotros {
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        //Discos
+
+        .main-discos {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+        }
+
+
+        //contacto
+        .contacto {
+            display: flex;
+
+            .formulario {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     }
-
-
-   //contacto
-   .contacto {
-       display: flex;
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-   }
-      
-     
-    
-
-    
-
-    
-
-   
-   
 }

@@ -9,3 +9,11 @@
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
+@mixin parrafos {
+    padding: 1px;
+    display: inline-flex;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+}
