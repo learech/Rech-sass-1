@@ -1,22 +1,33 @@
 .contacto {
     height: 100%;
-    background-image:url(/img/1560635.jpg);
+    background-image: url(/img/1560635.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-.formulario {
-    padding: 1rem;
-    margin-top: 10rem;
-    margin-bottom: 2rem;
-    font-weight: 600;
-    background: $color-terciario;
-    border-radius: 5px;
-    .color-boton {
+
+    h1 {
+        padding: 1rem;
+        margin-top: 8rem;
+        margin-bottom: 2rem;
         font-weight: 700;
-        background-color: $color-principal;
-        &:hover {
-            transform: scale(1.2);
+        background: $color-terciario;
+        border-radius: 5px;
+    }
+
+    .formulario {
+        padding: 1rem;
+        margin-bottom: 4rem;
+        font-weight: 600;
+        background: $color-terciario;
+        border-radius: 5px;
+
+        .color-boton {
+            font-weight: 700;
+            background-color: $color-principal;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
-}
 }

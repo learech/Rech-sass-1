@@ -9,96 +9,136 @@
 @import "base/tipografia";
 @import "layout/media";
 @import "views/literatura";
-//Discos
 
-.titulo-discos {
-    margin-top: 9rem;
-}
-h3 {
-    span {
-        color: red;
+.nav-item {
+    .nav-link {
+        &:hover {
+            background: lightblue;
+        }
     }
 }
-.contenedor-discos {
-    margin-top: 2rem;
-    img {
-        width:300px;
-        height:300px;
-        margin:1rem;
+
+.navbar-brand {
+    &:hover {
+        transform: scale(1.1);
     }
-    p {
-        margin-bottom: 2rem;
+}
+
+//Discos
+.main-discos {
+    .titulo-discos {
+        margin-top: 9rem;
+        color: brown;
+    }
+
+    h2 {
+        span {
+            color: red;
+        }
+    }
+
+    .contenedor-discos {
+        margin-top: 2rem;
+
+        img {
+            width: 300px;
+            height: 300px;
+            margin: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 2rem;
+            color: brown
+        }
     }
 }
 
 //Films
 .main-films {
     @include flex;
+
     .titulo-films {
         margin-top: 9rem;
     }
+
     .contenedor-films {
         @include flex;
+
         h2 {
             margin-bottom: 2rem;
             font-size: 1.5rem;
         }
+
         img {
             width: 350px;
         }
+
         h3 {
-            margin-left: 4rem;
-            margin-right: 4rem;
-            font-size: 1.3rem;
+            margin-top: 1rem;
+            font-size: 1.6rem;
             font-weight: 700;
         }
-        p {
-            font-size: 1rem;
-            font-weight: 200;
-            margin-left: 3rem;
-            margin-right: 3rem; 
+
+        .comentario-film {
+            font-weight: 700;
         }
+
+        p {
+            margin-left: 3rem;
+            margin-right: 3rem;
+            font-size: 1rem;
+            font-weight: normal;
+            text-align: start;
+        }
+
         .parrafo-video {
             font-size: 1.5rem;
             font-weight: 600;
             margin-top: 2rem;
         }
+
         iframe {
             margin-bottom: 2rem;
         }
     }
-    
+
 }
 
 //Nosotros
-.nosotros{
+.nosotros {
     h2 {
         margin-top: 6rem;
-        font-weight: 700; 
-     }
-.nosotros-contenedor {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-   
-    img {
-        width: 400px;
-        margin-top: 1rem;
-    }
-    .titulo-nosotros {
         font-weight: 700;
-        color:$color-secundario ;
     }
-    p {
-        font-size: 0.8rem;
-        font-weight: 550;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        margin-bottom: 3rem;
+
+    .nosotros-contenedor {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        img {
+            width: 400px;
+        }
+
+        .titulo-nosotros {
+            font-weight: 700;
+            color: $color-secundario;
+            margin-top: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 550;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            margin-bottom: 3rem;
+            text-align: start;
+        }
     }
 }
-}
-
-
-

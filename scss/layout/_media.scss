@@ -18,7 +18,7 @@
                 font-size: 1rem;
             }
         }
-        
+
     }
 
 
@@ -66,20 +66,29 @@
 
             h4 {
                 margin: 3rem;
+                font-size: 1.5rem;
                 font-weight: 700;
+            }
+
+            img {
+                width: 500px;
+
             }
         }
 
         //Nosotros
         .nosotros {
             display: inline-flex;
+
             .nosotros-contenedor {
                 .imagen-nosotros {
                     justify-content: center;
+
                     img {
                         width: 600px;
                     }
                 }
+
                 .texto-nosotros {
                     p {
                         font-size: 1.2rem;
@@ -106,6 +115,19 @@
                 flex-direction: column;
                 align-items: center;
             }
+        }
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .carousel {
+        h4 {
+            font-size: 2rem;
+        }
+
+        img {
+            width: 600px;
+            margin-bottom: 2rem;
         }
     }
 }

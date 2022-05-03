@@ -61,9 +61,10 @@ main {
     text-align: center;
     margin-left: 2rem;
     margin-right: 2rem; }
-  main h4 {
-    font-size: 2rem;
-    margin: 0.5rem; }
+  main .carousel h4 {
+    font-weight: 700; }
+  main .carousel img {
+    justify-content: center; }
 
 .footer {
   height: 100%;
@@ -74,7 +75,7 @@ main {
   -webkit-text-size-adjust: 100%; }
   .footer .footer-parrafo-uno {
     padding: 1rem; }
-  .footer h6 {
+  .footer .footer-destacado {
     margin-bottom: 0.6rem;
     font-size: 1.3rem;
     font-weight: 400; }
@@ -96,7 +97,7 @@ main {
   .footer .footer-parrafo-tres {
     padding: 1.5rem; }
   .footer .redes-sociales {
-    padding: 1rem;
+    padding: 2.5rem;
     display: flex;
     justify-content: flex-end; }
   .footer .footer-parrafo-tres {
@@ -113,10 +114,16 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
+  .contacto h1 {
+    padding: 1rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    background: #c1c161;
+    border-radius: 5px; }
   .contacto .formulario {
     padding: 1rem;
-    margin-top: 10rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     font-weight: 600;
     background: #c1c161;
     border-radius: 5px; }
@@ -171,7 +178,10 @@ body {
     justify-content: center; }
     .carousel h4 {
       margin: 3rem;
+      font-size: 1.5rem;
       font-weight: 700; }
+    .carousel img {
+      width: 500px; }
   .nosotros {
     display: inline-flex; }
     .nosotros .nosotros-contenedor .imagen-nosotros {
@@ -190,6 +200,13 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center; } }
+
+@media only screen and (min-width: 1024px) {
+  .carousel h4 {
+    font-size: 2rem; }
+  .carousel img {
+    width: 600px;
+    margin-bottom: 2rem; } }
 
 .main-literatura {
   display: flex;
@@ -240,20 +257,31 @@ body {
       margin-right: 2rem;
       text-align: start; }
 
-.titulo-discos {
-  margin-top: 9rem; }
+.nav-item .nav-link:hover {
+  background: lightblue; }
 
-h3 span {
+.navbar-brand:hover {
+  transform: scale(1.1); }
+
+.main-discos .titulo-discos {
+  margin-top: 9rem;
+  color: brown; }
+
+.main-discos h2 span {
   color: red; }
 
-.contenedor-discos {
+.main-discos .contenedor-discos {
   margin-top: 2rem; }
-  .contenedor-discos img {
+  .main-discos .contenedor-discos img {
     width: 300px;
     height: 300px;
     margin: 1rem; }
-  .contenedor-discos p {
-    margin-bottom: 2rem; }
+  .main-discos .contenedor-discos p {
+    margin-bottom: 1rem; }
+  .main-discos .contenedor-discos h3 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: brown; }
 
 .main-films {
   display: flex;
@@ -273,15 +301,17 @@ h3 span {
     .main-films .contenedor-films img {
       width: 350px; }
     .main-films .contenedor-films h3 {
-      margin-left: 4rem;
-      margin-right: 4rem;
-      font-size: 1.3rem;
+      margin-top: 1rem;
+      font-size: 1.6rem;
+      font-weight: 700; }
+    .main-films .contenedor-films .comentario-film {
       font-weight: 700; }
     .main-films .contenedor-films p {
-      font-size: 1rem;
-      font-weight: 200;
       margin-left: 3rem;
-      margin-right: 3rem; }
+      margin-right: 3rem;
+      font-size: 1rem;
+      font-weight: normal;
+      text-align: start; }
     .main-films .contenedor-films .parrafo-video {
       font-size: 1.5rem;
       font-weight: 600;
@@ -299,14 +329,15 @@ h3 span {
   flex-direction: column;
   text-align: center; }
   .nosotros .nosotros-contenedor img {
-    width: 400px;
-    margin-top: 1rem; }
+    width: 400px; }
   .nosotros .nosotros-contenedor .titulo-nosotros {
     font-weight: 700;
-    color: #212529; }
+    color: #212529;
+    margin-top: 1rem; }
   .nosotros .nosotros-contenedor p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 550;
     margin-left: 3rem;
     margin-right: 3rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    text-align: start; }

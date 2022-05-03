@@ -1,12 +1,15 @@
 header {
     display: flex;
     align-items: center;
+
     h1 {
         text-transform: uppercase;
     }
+
     img {
         width: 50px;
     }
+
     .color-menu {
         background-color: $color-principal;
     }
