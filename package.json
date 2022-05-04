@@ -5,9 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1","build-css": "node-sass --include-path scss scss/estilos.scss css/main.css","watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "LEANDRO RECH",
   "license": "ISC",
-  "description": "",
+  "description": "Página contracultural, de difusión y de libre pensamiento basada en nuestros propios ideales y gustos tanto musicales, literiarios y audiovisuales. Sin fines de lucro.",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
