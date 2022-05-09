@@ -5,26 +5,30 @@ main {
     @include flex;
     background-image: $gradiente-secundario;
 
-    h1 {
-        margin-top: 6rem;
-        font-size: 2rem;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
+    .contenedor-inicio {
+        h1 {
+            margin-top: 7rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            @include margen;
+            text-transform: uppercase;
+        }
 
-    p {
-        font-size: 1rem;
-        font-weight: 600;
-    }
+        p {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
 
-    .parrafo-especial {
-        font-size: 1rem;
-        font-weight: 100;
-        @include margen;
-    }
+        .parrafo-especial {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            font-weight: 100;
+            @include margen;
+        }
 
-    img {
-        width: 400px;
+        img {
+            width: 550px;
+        }
     }
 
     h2 {
@@ -32,42 +36,80 @@ main {
         color: brown;
     }
 
-    h3 {
-        margin-top: 4rem;
-        font-size: 2rem;
-        font-weight: 700;
-    }
-
-    .parrafo-disco {
-        width: 350px;
-        height: 80px;
-        @include parrafos;
-        @extend fuente;
-    }
-
     .contenedor-disco {
+        margin-top: 7rem;
+        border: solid;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        width: 480px;
+        height: 600px;
+        overflow: hidden;
+
+        h3 {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $color-terciario;
+        }
+
+        .parrafo-disco {
+            width: 350px;
+            height: 80px;
+            color: white;
+            @include margen;
+            @include parrafos;
+            @extend fuente;
+        }
+
+
         img {
-            width: 300px;
+            width: 250px;
             margin-bottom: 0.5rem;
             justify-content: center
         }
 
         p {
+            color: white;
             @include parrafos;
             @include margen;
             @extend fuente;
         }
     }
 
-    .carousel {
+    .playlist {
+        margin: 2rem;
+        border: solid;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 480px;
+        height: 550px;
+        align-items: center;
+        overflow: hidden;
         h4 {
+            margin-top: 2rem;
             font-weight: 700;
+            text-transform: uppercase;
+            color: $color-terciario;
         }
-
-        img {
+        p {
+            font-weight: 700;
+            @include margen;
+            color: white;
+        }
+        iframe {
             justify-content: center;
+            margin-bottom: 1rem;
         }
     }
 
+    .carousel {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
 
+   
 }

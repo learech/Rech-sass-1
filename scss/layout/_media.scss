@@ -1,6 +1,170 @@
-@media only screen and (min-width:600px) {
+@media only screen and (max-width:320px) {
 
-    //discos
+    //home
+    main {
+        .contenedor-inicio {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            img {
+                width: 280px;
+            }
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        .contenedor-disco {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            width: 310px;
+            justify-content: center;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .parrafo-disco {
+                width: 250px;
+                height: 90px;
+                font-size: 0.9rem;
+            }
+
+            img {
+                padding: 0.5rem;
+                width: 200px;
+                height: 200px;
+
+            }
+
+            p {
+                font-size: 0.9rem;
+                padding: 0;
+            }
+        }
+
+        .playlist {
+            width: 310px;
+        }
+
+        .carousel {
+            h4 {
+                font-size: 1.1rem;
+            }
+
+            img {
+                width: 260px;
+                @include margen;
+            }
+        }
+
+      
+    }
+
+    //Música
+    .main-discos {
+        .contenedor-discos {
+            .disco {
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                p {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    //films
+    .main-films {
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .contenedor-films {
+            h2 {
+                font-size: 0.8rem;
+                @include margen;
+            }
+
+            img {
+                width: 100px;
+            }
+
+            h3 {
+                font-size: 0.6rem;
+                @include margen;
+            }
+
+            iframe {
+                width: 350px;
+            }
+        }
+    }
+
+    // Nosotros
+    .nosotros {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .nosotros-contenedor {
+            .imagen-nosotros {
+                img {
+                    width: 280px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+
+    //home
+    main {
+        .contenedor-inicio {
+            img {
+                width: 320px;
+            }
+        }
+
+        .contenedor-disco {
+            margin-top: 2rem;
+            width: 320px;
+            height: 750px;
+
+            .parrafo-disco {
+                width: 260px;
+                height: 100px;
+            }
+        }
+
+        .playlist {
+            width: 320px;
+        }
+
+        .carousel {
+            margin-top: 2rem;
+
+            h4 {
+                @include margen;
+                font-size: 1.2rem;
+            }
+        
+            img {
+                width: 320px;
+                @include margen;
+            }
+        }
+    }
+
+    //Música
     .contenedor-discos {
         display: flex;
         flex-direction: row;
@@ -21,113 +185,140 @@
 
     }
 
+    //Nosotros
+    .nosotros {
+        display: flex;
 
-    @media only screen and (min-width:900px) {
-        main {
-            display: grid;
-            height: 70%;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 0.1fr 0.6fr;
-            grid-template-areas: "contenedor-inicio contenedor-disco"
-                "h2 h2"
-                "carousel carousel";
-        }
-
-        .contenedor-inicio {
-            grid-area: contenedor-inicio;
-            margin-bottom: 0;
-
-            img {
-                height: 350px;
-            }
-        }
-
-        .contenedor-disco {
-            grid-area: contenedor-disco;
-            margin-top: 5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            img {
-                width: 200px;
-            }
-        }
-
-        h2 {
-            grid-area: h2;
-        }
-
-        .carousel {
-            grid-area: carousel;
-            margin-top: 2rem;
-            display: flex;
-            justify-content: center;
-
-            h4 {
-                margin: 3rem;
-                font-size: 1.5rem;
-                font-weight: 700;
-            }
-
-            img {
-                width: 500px;
-
-            }
-        }
-
-        //Nosotros
-        .nosotros {
-            display: inline-flex;
-
-            .nosotros-contenedor {
-                .imagen-nosotros {
-                    justify-content: center;
-
-                    img {
-                        width: 600px;
-                    }
-                }
-
-                .texto-nosotros {
-                    p {
-                        font-size: 1.2rem;
-                    }
+        .nosotros-contenedor {
+            .imagen-nosotros {
+                img {
+                    width: 310px;
                 }
             }
         }
+    }
 
-        //Discos
+    //Films
+    .main-films {
+        .contenedor-films {
+            width: 350px;
+            margin: 0.5rem;
 
-        .main-discos {
-            display: flex;
-            flex-direction: column;
-            justify-items: center;
-        }
-
-
-        //contacto
-        .contacto {
-            display: flex;
-
-            .formulario {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            img {
+                width: 320px;
             }
         }
     }
 }
+
+@media only screen and (min-width:480px) {
+    .contenedor-disco {
+        margin-top: 2rem;
+    }
+    .carousel {
+        img {
+            width: 460px;
+        }
+    }
+}
+
 
 @media only screen and (min-width:1024px) {
-    .carousel {
-        h4 {
-            font-size: 2rem;
-        }
+    main {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,0.1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas: "navbar navbar"
+            "contenedor-inicio contenedor-disco"
+            "h2 h2"
+            "playlist carousel"
+            "footer footer";
+    }
 
+    .contenedor-inicio {
+        grid-area: contenedor-inicio;
+       
+    }
+
+    .contenedor-disco {
+        grid-area: contenedor-disco;
+    }
+
+    h2 {
+        grid-area: h2;
+        border: solid transparent;
+        display: flex;
+        width: 1024px;
+        justify-self: center;
+        margin-left: 0.5rem;
+        
+        
+    }
+
+    .playlist {
+        grid-area: playlist;
+    }
+
+    .carousel {
+        grid-area: carousel;
+        display: block;
+        width: 480px;
         img {
-            width: 600px;
-            margin-bottom: 2rem;
+            width:100%;
+        }
+    }
+
+
+    //Nosotros
+    .nosotros {
+        display: inline-flex;
+
+        .nosotros-contenedor {
+            h2 {
+                justify-content: center;
+            }
+            .imagen-nosotros {
+                justify-content: center;
+
+                img {
+                    width: 600px;
+                }
+            }
+
+            .texto-nosotros {
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    //Música
+
+    .main-discos {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        h2 {
+            justify-content: center;
+        }
+    }
+
+
+    //contacto
+    .contacto {
+        display: flex;
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
+
+
+
+

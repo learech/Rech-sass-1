@@ -14,6 +14,7 @@
         margin-bottom: 0.6rem;
         font-size: 1.3rem;
         font-weight: 400;
+        justify-content: center;
     }
 
     .footer-parrafo-dos {
@@ -39,18 +40,16 @@
 
     .footer-parrafo-tres {
         padding: 1.5rem;
+        text-align: center
     }
 
     .redes-sociales {
         padding: 2.5rem;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
 
     }
 
-    .footer-parrafo-tres {
-        text-align: center
-    }
 
     img {
         @include margen;
