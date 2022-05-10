@@ -53,7 +53,7 @@
         }
 
         .playlist {
-            width: 310px;
+            width: 280px;
         }
 
         .carousel {
@@ -117,8 +117,9 @@
                 @include margen;
             }
 
-            iframe {
-                width: 280px;
+            .trailer {
+                width: 260px;
+                height: 200px;
             }
         }
     }
@@ -146,6 +147,7 @@
     .main-home {
         .contenedor-inicio {
             margin-top: 4rem;
+
             img {
                 width: 320px;
             }
@@ -163,7 +165,7 @@
         }
 
         .playlist {
-            width: 320px;
+            width: 300px;
         }
 
         .carousel {
@@ -224,11 +226,18 @@
             img {
                 width: 320px;
             }
+
+            .trailer {
+                width: 320px;
+                height: 260px;
+            }
         }
     }
 }
 
 @media only screen and (min-width:480px) {
+
+    //Home
     .contenedor-inicio {
         margin-top: 4rem;
     }
@@ -238,10 +247,20 @@
             width: 460px;
         }
     }
+
+    //Films 
+    .main-films {
+       .trailer {
+        width: 480px;
+        height: 400px;
+       }
+    }
 }
 
 
 @media only screen and (min-width:1024px) {
+
+    //Home
     .main-home {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -283,6 +302,28 @@
         }
     }
 
+    //Música
+
+    .main-discos {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+
+        h2 {
+            justify-content: center;
+        }
+    }
+
+    //Films
+
+    .main-films {
+        .trailer {
+            width: 600px;
+            height: 500px;
+        }
+    }
+
+
 
     //Nosotros
     .nosotros {
@@ -305,16 +346,5 @@
         }
     }
 
-    //Música
-
-    .main-discos {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-
-        h2 {
-            justify-content: center;
-        }
-    }
 
 }

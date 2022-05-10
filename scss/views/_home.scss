@@ -89,6 +89,7 @@
         height: 550px;
         align-items: center;
         overflow: hidden;
+
         h4 {
             margin-top: 2rem;
             font-weight: 700;
@@ -96,11 +97,13 @@
             color: $color-terciario;
             @include margen;
         }
+
         p {
             font-weight: 700;
             @include margen;
             color: white;
         }
+
         iframe {
             justify-content: center;
             margin-bottom: 1rem;
@@ -108,10 +111,10 @@
     }
 
     .carousel {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-   
+
 }

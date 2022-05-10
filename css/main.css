@@ -224,7 +224,7 @@ body {
       padding: 0;
       line-height: 30px; }
   .main-home .playlist {
-    width: 310px; }
+    width: 280px; }
   .main-home .carousel h4 {
     font-size: 1.1rem; }
   .main-home .carousel img {
@@ -256,8 +256,9 @@ body {
     font-size: 0.9rem;
     margin-left: 2rem;
     margin-right: 2rem; }
-  .main-films .contenedor-films iframe {
-    width: 280px; }
+  .main-films .contenedor-films .trailer {
+    width: 260px;
+    height: 200px; }
   .nosotros h2 {
     font-size: 1.5rem; }
   .nosotros .nosotros-contenedor .imagen-nosotros img {
@@ -276,7 +277,7 @@ body {
       width: 260px;
       height: 100px; }
   .main-home .playlist {
-    width: 320px; }
+    width: 300px; }
   .main-home .carousel {
     margin-top: 2rem; }
     .main-home .carousel h4 {
@@ -306,13 +307,19 @@ body {
     width: 350px;
     margin: 0.5rem; }
     .main-films .contenedor-films img {
-      width: 320px; } }
+      width: 320px; }
+    .main-films .contenedor-films .trailer {
+      width: 320px;
+      height: 260px; } }
 
 @media only screen and (min-width: 480px) {
   .contenedor-inicio {
     margin-top: 4rem; }
   .carousel img {
-    width: 460px; } }
+    width: 460px; }
+  .main-films .trailer {
+    width: 480px;
+    height: 400px; } }
 
 @media only screen and (min-width: 1024px) {
   .main-home {
@@ -336,6 +343,15 @@ body {
     width: 480px; }
     .carousel img {
       width: 100%; }
+  .main-discos {
+    display: flex;
+    flex-direction: column;
+    justify-items: center; }
+    .main-discos h2 {
+      justify-content: center; }
+  .main-films .trailer {
+    width: 600px;
+    height: 500px; }
   .nosotros {
     display: inline-flex; }
     .nosotros .nosotros-contenedor .imagen-nosotros {
@@ -343,13 +359,7 @@ body {
       .nosotros .nosotros-contenedor .imagen-nosotros img {
         width: 600px; }
     .nosotros .nosotros-contenedor .texto-nosotros p {
-      font-size: 1.2rem; }
-  .main-discos {
-    display: flex;
-    flex-direction: column;
-    justify-items: center; }
-    .main-discos h2 {
-      justify-content: center; } }
+      font-size: 1.2rem; } }
 
 .main-literatura {
   display: flex;
