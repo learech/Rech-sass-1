@@ -1,9 +1,10 @@
 header {
-    display:flex;
+    display: flex;
     align-items: center;
-   .color-menu {
-       background-color: $color-principal;
-   }
+
+    .color-menu {
+        background-color: $color-principal;
+    }
 
     nav {
         .navbar-color-menu {

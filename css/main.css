@@ -369,15 +369,15 @@ body {
   background-image: linear-gradient(to right, #99eeb6 0%, #f3fc75 0%, #d4d4b1 100%); }
   .main-literatura .titulo-libros {
     margin-top: 6rem;
-    font-weight: 700;
-    color: blue; }
+    font-weight: 700; }
   .main-literatura .contenedor-libros {
     margin-top: 1rem;
     margin-bottom: 3rem; }
     .main-literatura .contenedor-libros h2 {
       font-size: 1.5rem;
       font-weight: 700;
-      justify-content: center; }
+      justify-content: center;
+      color: blue; }
     .main-literatura .contenedor-libros .libro {
       border: solid;
       padding: 5px;
@@ -419,9 +419,6 @@ body {
       line-height: 30px; }
 
 body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   background-image: linear-gradient(to right, #99eeb6 0%, #f3fc75 0%, #d4d4b1 100%); }
 
 .main-discos {
@@ -460,8 +457,7 @@ body {
   background-image: linear-gradient(to right, #99eeb6 0%, #f3fc75 0%, #d4d4b1 100%); }
   .main-films .titulo-films {
     margin-top: 9rem;
-    font-weight: 700;
-    color: blue; }
+    font-weight: 700; }
   .main-films .contenedor-films {
     display: flex;
     flex-direction: column;
@@ -470,7 +466,8 @@ body {
     .main-films .contenedor-films h2 {
       margin-bottom: 2rem;
       font-size: 1.5rem;
-      font-weight: 700; }
+      font-weight: 700;
+      color: blue; }
     .main-films .contenedor-films img {
       width: 350px; }
     .main-films .contenedor-films h3 {
@@ -500,9 +497,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
   display: flex; }
-  .nosotros .nosotros-contenedor {
-    padding: 0.5rem;
-    margin: 10rem 4rem 4rem 2rem;
+  .nosotros .card {
+    margin: 10rem 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.5);
@@ -510,20 +506,13 @@ body {
     border-radius: 10px;
     text-align: center;
     line-height: 35px; }
-    .nosotros .nosotros-contenedor h2 {
-      margin-top: 1rem;
-      font-weight: 700;
-      color: blue;
-      justify-content: center;
-      text-transform: uppercase; }
-    .nosotros .nosotros-contenedor .titulo-nosotros {
-      font-weight: 700;
-      color: blue;
-      margin-top: 1rem; }
-    .nosotros .nosotros-contenedor p {
+    .nosotros .card .card-header h1 {
+      font-weight: 700; }
+    .nosotros .card p {
       font-size: 1rem;
-      font-weight: 550;
       margin-left: 1rem;
       margin-right: 1rem;
       margin-bottom: 1rem;
       text-align: start; }
+    .nosotros .card .blockquote-footer h2 {
+      font-size: 1rem; }

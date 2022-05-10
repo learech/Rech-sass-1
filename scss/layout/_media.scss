@@ -250,10 +250,10 @@
 
     //Films 
     .main-films {
-       .trailer {
-        width: 480px;
-        height: 400px;
-       }
+        .trailer {
+            width: 480px;
+            height: 400px;
+        }
     }
 }
 
@@ -303,7 +303,6 @@
     }
 
     //Música
-
     .main-discos {
         display: flex;
         flex-direction: column;
@@ -315,15 +314,12 @@
     }
 
     //Films
-
     .main-films {
         .trailer {
             width: 600px;
             height: 500px;
         }
     }
-
-
 
     //Nosotros
     .nosotros {
