@@ -1,26 +1,24 @@
 .contacto {
     background-image: url(../img/1560635.jpg);
     @include fondo;
-
-    h1 {
-        padding: 1rem;
-        margin-top: 8rem;
-        margin-bottom: 2rem;
-        font-weight: 700;
-        background: $color-terciario;
-        border-radius: 5px;
-    }
+    display: flex;
+    justify-content: center;
 
     .formulario {
+        width: fit-content;
         padding: 1rem;
+        margin-top: 8rem;
         margin-bottom: 4rem;
         font-weight: 600;
         background: $color-terciario;
         border-radius: 5px;
+        text-align: center;
+        align-items: center;
 
         .color-boton {
             font-weight: 700;
             background-color: $color-principal;
+            width: fit-content;
 
             &:hover {
                 transform: scale(1.2);

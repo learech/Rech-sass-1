@@ -10,34 +10,26 @@
 @import "layout/media";
 @import "views/literatura";
 
-.nav-item {
-    font-weight: 700;
-    .nav-link {
-        &:hover {
-            background: lightblue;
-        }
-    }
-}
-
-.navbar-brand {
-    font-weight: 700;
-    text-transform: uppercase;
-    &:hover {
-        transform: scale(1.1);
-    }
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: $gradiente-secundario;
 }
 
 //Música
 .main-discos {
+    background-image: $gradiente-secundario;
+    text-align: center;
     .titulo-discos {
         margin-top: 9rem;
-        color: brown;
+        color:black;
         font-weight: 700;
     }
 
     h2 {
         span {
-            color: red;
+            color:blue;
             font-weight: 700;
         }
     }
@@ -62,7 +54,7 @@
         h3 {
             margin-top: 0;
             margin-bottom: 2rem;
-            color: brown;
+            color:blue;
             font-weight: 700;
         }
     }
@@ -71,10 +63,12 @@
 //Films
 .main-films {
     @include flex;
+    background-image: $gradiente-secundario;
 
     .titulo-films {
         margin-top: 9rem;
-        font-weight: 700
+        font-weight: 700;
+        color: blue;
     }
 
     .contenedor-films {
@@ -83,6 +77,7 @@
         h2 {
             margin-bottom: 2rem;
             font-size: 1.5rem;
+            font-weight: 700;
         }
 
         img {
@@ -100,7 +95,8 @@
         }
 
         p {
-            @include margen;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
             font-size: 1rem;
             font-weight: normal;
             text-align: start;
@@ -110,6 +106,7 @@
             font-size: 1.5rem;
             font-weight: 600;
             margin-top: 2rem;
+            text-align: center;
         }
 
         iframe {
@@ -132,16 +129,18 @@
         box-shadow: rgba(0,0,0,0.5);
         background: rgba(237, 240, 245, 0.692);
         border-radius: 10px;
+        text-align: center;
+        line-height: 35px;
         h2 {
             margin-top: 1rem;
             font-weight: 700;
-            color: $color-secundario;
+            color:blue;
             justify-content: center;
             text-transform: uppercase;
         }
         .titulo-nosotros {
             font-weight: 700;
-            color: $color-secundario;
+            color: blue;
             margin-top: 1rem;
         }
 

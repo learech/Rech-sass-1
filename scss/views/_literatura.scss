@@ -1,9 +1,11 @@
 .main-literatura {
     @include flex;
+    background-image: $gradiente-secundario;
 
     .titulo-libros {
         margin-top: 6rem;
         font-weight: 700;
+        color: blue;
     }
 
     .contenedor-libros {
@@ -13,13 +15,14 @@
         h2 {
             font-size: 1.5rem;
             font-weight: 700;
+            justify-content: center;
         }
 
         .libro {
             border: solid;
             padding: 5px;
             margin: 1rem;
-            background-color: $color-principal;
+            background-color: $color-terciario;
             display: inline-flex;
             flex-direction: column;
             width: 300px;
@@ -35,6 +38,7 @@
             p {
                 margin: 0.3rem;
                 text-align: start;
+                font-weight: 700;
             }
         }
     }
@@ -61,6 +65,8 @@
         p {
             @include margen;
             text-align: start;
+            font-weight: 700;
+            line-height: 30px;
         }
     }
 }

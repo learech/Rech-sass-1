@@ -1,16 +1,46 @@
 header {
-    display: flex;
+    display:flex;
     align-items: center;
+   .color-menu {
+       background-color: $color-principal;
+   }
 
-    h1 {
-        text-transform: uppercase;
+    nav {
+        .navbar-color-menu {
+            background-color: $color-principal;
+        }
+
+        .nav-item {
+            font-weight: 700;
+
+            .nav-link {
+                &:hover {
+                    background: lightblue;
+                }
+            }
+        }
+
+        .navbar-brand {
+            img {
+                width: 50px;
+            }
+
+            font-weight: 700;
+            text-transform: uppercase;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .dropdown-menu {
+            background-color: $color-terciario;
+
+            .dropdown-item {
+                font-weight: 700;
+            }
+        }
     }
 
-    img {
-        width: 50px;
-    }
 
-    .color-menu {
-        background-color: $color-principal;
-    }
 }

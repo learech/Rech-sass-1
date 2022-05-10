@@ -1,10 +1,16 @@
 @media only screen and (max-width:320px) {
 
     //home
-    main {
+    .main-home {
         .contenedor-inicio {
+            margin-top: 4rem;
+
             h1 {
                 font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
             }
 
             img {
@@ -12,12 +18,12 @@
             }
         }
 
-        h2 {
-            font-size: 1rem;
+        .texto-decorativo {
+            font-size: 1.2rem;
+            font-weight: 700;
         }
 
         .contenedor-disco {
-            margin-top: 2rem;
             margin-bottom: 2rem;
             width: 310px;
             justify-content: center;
@@ -42,6 +48,7 @@
             p {
                 font-size: 0.9rem;
                 padding: 0;
+                line-height: 30px;
             }
         }
 
@@ -60,7 +67,7 @@
             }
         }
 
-      
+
     }
 
     //Música
@@ -92,17 +99,26 @@
                 @include margen;
             }
 
-            img {
-                width: 100px;
+            .img-film {
+                width: 280px;
             }
 
             h3 {
-                font-size: 0.6rem;
+                @include margen;
+            }
+
+            .comentario-film {
+                font-size: 1rem;
+                @include margen;
+            }
+
+            .texto-film {
+                font-size: 0.9rem;
                 @include margen;
             }
 
             iframe {
-                width: 350px;
+                width: 280px;
             }
         }
     }
@@ -127,8 +143,9 @@
 @media only screen and (max-width:480px) {
 
     //home
-    main {
+    .main-home {
         .contenedor-inicio {
+            margin-top: 4rem;
             img {
                 width: 320px;
             }
@@ -156,7 +173,7 @@
                 @include margen;
                 font-size: 1.2rem;
             }
-        
+
             img {
                 width: 320px;
                 @include margen;
@@ -212,9 +229,10 @@
 }
 
 @media only screen and (min-width:480px) {
-    .contenedor-disco {
-        margin-top: 2rem;
+    .contenedor-inicio {
+        margin-top: 4rem;
     }
+
     .carousel {
         img {
             width: 460px;
@@ -224,49 +242,44 @@
 
 
 @media only screen and (min-width:1024px) {
-    main {
+    .main-home {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(5,0.1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 0.1fr);
+        grid-column-gap: 20px;
         grid-template-areas: "navbar navbar"
             "contenedor-inicio contenedor-disco"
-            "h2 h2"
+            "texto-decorativo texto-decorativo"
             "playlist carousel"
             "footer footer";
     }
 
     .contenedor-inicio {
         grid-area: contenedor-inicio;
-       
+        margin: 1rem;
+
     }
 
     .contenedor-disco {
         grid-area: contenedor-disco;
     }
 
-    h2 {
-        grid-area: h2;
-        border: solid transparent;
-        display: flex;
-        width: 1024px;
-        justify-self: center;
-        margin-left: 0.5rem;
-        
-        
+    .texto-decorativo {
+        grid-area: texto-decorativo;
     }
 
     .playlist {
         grid-area: playlist;
+
     }
 
     .carousel {
         grid-area: carousel;
         display: block;
         width: 480px;
+
         img {
-            width:100%;
+            width: 100%;
         }
     }
 
@@ -276,9 +289,6 @@
         display: inline-flex;
 
         .nosotros-contenedor {
-            h2 {
-                justify-content: center;
-            }
             .imagen-nosotros {
                 justify-content: center;
 
@@ -301,24 +311,10 @@
         display: flex;
         flex-direction: column;
         justify-items: center;
+
         h2 {
             justify-content: center;
         }
     }
 
-
-    //contacto
-    .contacto {
-        display: flex;
-
-        .formulario {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
 }
-
-
-
-

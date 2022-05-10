@@ -1,13 +1,13 @@
 @import "utilities/mixins";
 @import "utilities/funciones";
 
-main {
+.main-home {
     @include flex;
     background-image: $gradiente-secundario;
 
     .contenedor-inicio {
         h1 {
-            margin-top: 7rem;
+            margin-top: 4rem;
             font-size: 2.5rem;
             font-weight: 700;
             @include margen;
@@ -31,13 +31,13 @@ main {
         }
     }
 
-    h2 {
+    .texto-decorativo {
         margin: 0.5rem;
         color: brown;
     }
 
     .contenedor-disco {
-        margin-top: 7rem;
+        margin-top: 4rem;
         border: solid;
         background-color: black;
         display: flex;
@@ -57,7 +57,8 @@ main {
             width: 350px;
             height: 80px;
             color: white;
-            @include margen;
+            margin-left: 1rem;
+            margin-right: 1rem;
             @include parrafos;
             @extend fuente;
         }
@@ -93,6 +94,7 @@ main {
             font-weight: 700;
             text-transform: uppercase;
             color: $color-terciario;
+            @include margen;
         }
         p {
             font-weight: 700;
